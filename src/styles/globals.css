@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        position: relative;
+    }
+}
+@layer components {
+    .btn {
+        @apply text-white bg-green-200 rounded-[10px] px-[35px] py-[20px] text-medium cursor-pointer font-quickSand shadow-c;
+    }
+    .btn:hover {
+        @apply bg-green-300 text-white;
+    }
+    .badge {
+        @apply rounded-r-[30px] px-[15px] py-[10px] text-xsmall font-lato text-white inline-block;
+    }
+    .badge--off {
+        @apply bg-green-200;
+    }
+    .badge--hot {
+        @apply bg-red;
+    }
+    .badge--sale {
+        @apply bg-yellow-200;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gl-star-rating--stars {
+        width: 100%;
+        height: 12px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        transition: background-color 9999999s ease-in-out 0s; /*this will make background color transparent in auto fill*/
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        transition: background-color 9999999s ease-in-out 0s; /*this will make background color transparent in auto fill*/
+    }
+    input[type='checkbox'] {
+        accent-color: #3bb77e;
+    }
+}
